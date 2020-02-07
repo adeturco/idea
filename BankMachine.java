@@ -25,8 +25,11 @@ public class BankMachine {
             if(choice == 'Y') {
                 checkPin();
             }
-            else {
+            else if(choice == 'N') {
                 System.exit(0);
+            }
+            else {
+                System.out.println("Wrong symbol. Press 'Y' or 'N'");
             }
         }
     }
